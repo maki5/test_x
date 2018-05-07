@@ -1,0 +1,26 @@
+<h1>Listing users</h1>
+
+<%= link_to 'New User', new_user_path %>
+
+<table id="users">
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody class="page">
+  <%= render @users %>
+  </tbody>
+</table>
+
+<br>
+
+
+<p class="pagination" hidden>
+  <%= link_to_next_page(@users, 'Next Page', :remote => true) %>
+</p>
