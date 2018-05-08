@@ -1,0 +1,7 @@
+<tr id="user_edit_<%= user.id %>" hidden>
+  <%= form_for user, remote: true, authenticity_token: true do |f| %>
+      <td><%= f.text_field :first_name %></td>
+      <td><%= f.text_field :last_name %></td>
+      <td><%= f.submit :submit %></td>
+  <% end %>
+</tr>

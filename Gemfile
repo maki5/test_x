@@ -62,3 +62,6 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'kaminari-mongoid'
 gem 'jquery-infinite-pages'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"

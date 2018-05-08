@@ -1,4 +1,4 @@
-$("<%=j render @users %>").appendTo($("#users"));
+$("#users").append("<%=j render @users %>");
 
 <% if @users.next_page %>
     $('.pagination').html('<%= link_to_next_page(@users, 'Next Page', :remote => true) %>');
