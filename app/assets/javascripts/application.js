@@ -14,4 +14,5 @@
 //= require turbolinks
 //= require jquery
 //= require jquery.infinite-pages
+//= require jasmine-jquery
 //= require_tree .
